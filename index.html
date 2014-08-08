@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>jQuery Teleprompter</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="jquery.teleprompter.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 6rem;
+        margin: 0;
+
+      }
+
+      .teleprompter {
+        background: #111;
+        color: #eee;
+        height: 600px;
+        margin: 0 auto;
+        width: 90%
+      }
+
+      .teleprompter-script {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="teleprompter" id="teleprompter">
+      <div class="teleprompter-script">
+        <p>A teleprompter, or autocue, is a display device that prompts the person speaking with an electronic visual text of a speech or script. Using a teleprompter is similar to using cue cards. The screen is in front of, and usually below, the lens of a professional video camera, and the words on the screen are reflected to the eyes of the presenter using a sheet of clear glass or a specially prepared beam splitter. Light from the performer passes through the front side of the glass into the lens, while a shroud surrounding the lens and the back side of the glass prevents unwanted light from entering the lens.</p>
+        <p>Source: <a href="http://en.wikipedia.org/wiki/Teleprompter">Wikipedia</a></p>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="jquery.teleprompter.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#teleprompter").teleprompter();
+      });
+    </script>
+  </body>
+</html>
